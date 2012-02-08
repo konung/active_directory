@@ -44,6 +44,9 @@ module ActiveDirectory
         @@ldap_connected = false
         @@caching = false
         @@cache = {}
+        
+        attr_accessor :entry
+        attr_accessor :attributest
 
         #
         # Configures the connection for the Ruby/ActiveDirectory library.
